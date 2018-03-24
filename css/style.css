@@ -1,0 +1,46 @@
+@import url(reset.css);
+
+
+
+
+
+hr {
+    clear: both;
+}
+
+.menu {
+    margin-left: 200px;
+    border: 1px solid red;
+}
+.menu:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu li {
+    display: inline-block;
+    float: left;
+    border: 1px solid blue;
+    margin: 2px 2px 0px;
+}
+.menu li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    padding: 10px;
+    background: #ff9900;
+    cursor: pointer;
+}
+
+.menu li a:hover:after{
+    border-width: 1px;
+    border-style: solid;
+    bottom: 0;
+    content: "";
+    margin: auto;
+    display: block;
+    width: 30px;
+}
