@@ -1,38 +1,52 @@
 @import url(reset.css);
 
-
-
-
-
-hr {
-    clear: both;
+header {
+    background: #00ff88;
+    opacity: 0.7;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
 }
-
+.logo {
+    border: 1px solid blue;
+    width: 93.14px;
+    height: 42px;
+    float: left;
+    margin-left: 50px;
+}
+.logoimg {
+    height: 42px;
+}
 .menu {
-    margin-left: 200px;
+    margin-left: 250px;
     border: 1px solid red;
+
 }
 .menu:after {
     content: "";
     clear: both;
     display: table;
 }
-.menu li {
+.menu li /* a */ {
     display: inline-block;
     float: left;
     border: 1px solid blue;
     margin: 2px 2px 0px;
 }
-.menu li a {
+.menu a {
     padding: 10px;
     display: block;
     text-decoration: none;
 }
+.menu > li {
+    display: inline-block;
+    position: relative;
+}
 
 .menu li a:hover {
-    padding: 10px;
+    padding: 9px 10px;
     background: #ff9900;
-    cursor: pointer;
 }
 
 .menu li a:hover:after{
@@ -43,4 +57,39 @@ hr {
     margin: auto;
     display: block;
     width: 30px;
+}
+#headv {
+    border: 1px solid blue;
+    margin: 0 auto;
+    background: #00ff88;
+    height: 45px;
+}
+#part1 {
+    max-width: 1000px;
+    /*height: 1000px;*/
+    border: 1px solid blue;
+    margin: 0 auto;
+    background: url("../img/back.jpeg") repeat;
+}
+
+.menu .submenu {
+    position: absolute;
+}
+
+.submenu {
+    margin-left: -3px;
+    display: none;
+    background: #00ff88;
+}
+.submenu a {
+    margin-left: -3px;
+    padding: 8px;
+}
+.submenu li a:hover {
+    padding: 7px 6.5px;
+    background: #ff9900;
+    margin-left: 0;
+}
+.menu > li:hover .submenu {
+    display: block;
 }
