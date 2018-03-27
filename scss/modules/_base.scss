@@ -1,0 +1,37 @@
+
+p, body, html {
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: Tahoma, sans-serif;
+}
+
+// links
+
+a {
+  & {
+    color: $primary-color;
+
+  }
+
+  &:hover {
+    color: blue;
+  }
+
+  &:visited {
+      color: blueviolet;
+  }
+
+  &:active {
+    color: #00ff88;
+  }
+}
+
+// h1
+
+button {
+
+}
+
+.button {
+
+}
