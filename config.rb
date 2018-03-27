@@ -5,8 +5,8 @@ sass_dir = 'scss'
 images_dir = 'img'
 javascripts_dir = 'js'
 relative_assets = true
-line_comments = true
+line_comments = false
 # output_style = :compressed
-output_style = :nested
+output_style = :compact
 sourcemap = true
 
