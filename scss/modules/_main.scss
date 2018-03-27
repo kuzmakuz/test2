@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(../css/reset.css);
 
 header {
     background: #00ff88;
@@ -69,7 +69,7 @@ header {
     /*height: 1000px;*/
     border: 1px solid blue;
     margin: 0 auto;
-    background: url("../img/back.jpeg") repeat;
+    background: url("../../img/back.jpeg") repeat;
 }
 
 .menu .submenu {
