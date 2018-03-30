@@ -9,90 +9,111 @@ header {
 }
 
 .logo {
-  width: 93px;
-  height: 42px;
-  float: left;
-  margin-left: 50px;
-}
-
-// Main menu
-.menu {
-  & {
-    margin-left: 250px;
-    font-size: 14px;
-    font-family: Tahoma, sans-serif;
-  }
-
-  &:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  li {
-    display: inline-block;
-    position: relative;
+  img {
+    width: 93px;
+    height: 42px;
     float: left;
-    margin: 2px 2px 0;
-
-    &:hover .submenu {
-      display: block;
-    }
+    margin-left: 50px;
   }
-
-  a {
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    color: $white;
-    position: relative;
-
-    &:hover {
-      padding: 9px 10px;
-      background: rgba(255,255,255,0.4);
-
-      &:after {
-        border-width: 1px;
-        border-style: solid;
-        content: "";
-        margin: auto;
-        display: block;
-        width: 30px;
-        position: absolute;
-        left: 50%;
-        margin-left: -15px;
-        bottom: 2px;
-      }
+}
+  // Main menu
+.menu {
+    & {
+      margin-left: 250px;
+      font-size: 14px;
+      font-family: Tahoma, sans-serif;
     }
-  }
 
-  .submenu {
-    position: absolute;
-    margin-left: -3px;
-    display: none;
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
     li {
-      a {
-        margin-left: -3px;
-        padding: 8px;
+      display: inline-block;
+      position: relative;
+      float: left;
+      margin: 2px 2px 0;
 
+      &:hover .submenu {
+        display: block;
+      }
+    }
+
+    a {
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      color: $white;
+      position: relative;
+
+      &:hover {
+        padding: 9px 10px;
+        background: rgba(255,255,255,0.4);
+
+        /*&:after {
+          border-width: 1px;
+          border-style: solid;
+          content: "";
+          margin: auto;
+          display: block;
+          width: 30px;
+          position: absolute;
+          left: 50%;
+          margin-left: -15px;
+          bottom: 2px;
+        } */
+      }
+
+    }
+    &>li {
+      & > a {
         &:hover {
-          padding: 7px 6.5px;
-          background: #ff9900;
-          margin-left: 0;
+          &:after {
+            border-width: 1px;
+            border-style: solid;
+            content: "";
+            margin: auto;
+            display: block;
+            width: 30px;
+            position: absolute;
+            left: 50%;
+            margin-left: -15px;
+            bottom: 2px;
+          }
+
         }
       }
     }
+    .submenu {
+      position: absolute;
+      margin-left: -3px;
+      display: none;
+
+      li {
+        a {
+          margin-left: -3px;
+          padding: 8px;
+
+          &:hover {
+            padding: 7px 6.5px;
+            background: rgba(255,255,255,0.4);
+            margin-left: 0;
+          }
+        }
+      }
+    }
+}
+
+  #headv {
+    border: 1px solid blue;
+    margin: 0 auto;
+    background: #00ff88;
+    height: 45px;
   }
-}
 
-#headv {
-  border: 1px solid blue;
-  margin: 0 auto;
-  background: #00ff88;
-  height: 45px;
-}
+  .menu > li:hover .submenu {
+    display: block;
+  }
 
-.menu > li:hover .submenu {
-  display: block;
-}
