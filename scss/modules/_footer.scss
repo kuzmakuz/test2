@@ -1,18 +1,24 @@
 footer {
-  & {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.915);
     position: fixed;
     width: 100%;
-    height: auto; //45px;
+    height: 45px;
     margin: 0 auto;
     bottom: 0;
+     @include atransition(all 1s ease);
+
+
+  &:hover {
+    height: 175px;
   }
+
   .wr {
     border-top: 1px solid white;
   }
 
 }
 .down-menu {
+
     a {
       display: inline-block;
       padding-left: 18px;
@@ -35,11 +41,15 @@ footer {
   }
 }
 .area {
-  & {
     display: inline-block;
     margin: 10px 45px 10px 25px;
     width: 100px;
-  }
+
+    li {
+      &:first-child {
+        padding-bottom: 10px;
+      }
+    }
 }
 
 a {

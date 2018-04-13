@@ -1,0 +1,9 @@
+@mixin border-temp {
+  border: 1px solid red;
+}
+
+@mixin clearFX{
+  content: "";
+  clear: both;
+  display: table;
+}
